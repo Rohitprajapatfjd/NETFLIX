@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 90vh;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1600px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 150vh;
+    margin: auto;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 170px;
+    position: relative;
+    z-index: 2;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    font-family: 'Poppins', sans-serif;
+
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero>:first-child {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero>:nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    height: 9px;
+    background-color: rgb(94, 91, 91);
+    position: relative;
+}
+
+.btn {
+    padding: 3px 8px;
+   font-weight: 400;
+    background-color: rgb(248, 243, 243,0.3);
+    color: white;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    padding: 3px 24px;
+    font-size: 20px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 400;
+}
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+.hero-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero input {
+   padding: 6px 24px;
+   font-size: 15px;
+   border-radius: 4px;
+   background-color: rgb(23, 23, 23,0.7);
+   border: 1px solid rgba(117, 114, 114, 0.5);
+   font-weight: 300;
+   color: white;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+    align-items: center;
+   padding: 24px;
+  
+}
+.secimages img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.secimages{
+    position: relative;
+}
+.secimages video{
+    width: 21.93vw;
+    position: absolute;
+    top: 10vh;
+    right: 4.2vw;
+}
+.third > .secimages video{
+    width: 18.93vw;
+    position: absolute;
+    top: 6vh;
+    right: 5.2vw;
+}
+.first > div {
+    display: flex;
+    flex-direction: column;
+}
+.first > div :first-child {
+    font-size: 42px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2) {
+    font-size: 20px;
+   
+}
+.faq{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 70vw;
+    padding: 10px;
+}
+.faq > h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+.faqbox{
+    transition: all 0.7s ease-out;
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 26px;
+    justify-content: space-between;
+    margin: 14px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.faqbox  svg{
+   filter: invert(1);
+}
+footer{
+    color: white;
+    max-width: 70vw;
+    margin: auto; 
+    padding: 15px;
+}
+footer .ques{
+    padding: 40px 0px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.footer a{
+    color: white;
+}
+@media screen and (max-width: 700px ) {
+    .first > div :first-child{
+        font-size: 20px;
+    }
+    .first > div :nth-child(2){
+        font-size: 15px;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1400px ) {
+
+    .secimages video{
+        width: 21.93vw;
+        position: absolute;
+        top: 3vh;
+        right: 4.2vw;
+    }
+   
+    .third > .secimages video{
+        width: 18.93vw;
+        position: absolute;
+        top: 2.3vh;
+        right: 5.2vw;
+    }
+
+}
+@media screen and (max-width: 500px ) {
+
+    .secimages video{
+        width: 21.93vw;
+        position: absolute;
+        top: 2vh;
+        right: 4.2vw;
+    }
+    .third > .secimages video{
+        width: 18.93vw;
+        position: absolute;
+        top: 1.4vh;
+        right: 5.2vw;
+    }
+    .hero-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 2fr ;
+        
+        
+    }
+}
+
+
